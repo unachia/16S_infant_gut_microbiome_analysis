@@ -1,0 +1,46 @@
+# ============================================================
+# General paths
+# ============================================================
+
+# Main results directory
+results_dir: "results"
+
+# Raw FASTQ files
+raw_dir: "data/raw"
+
+# IDTaxa reference database
+idtaxa_db: "resources/SILVA_SSU_r138_2019.RData"
+
+
+# ============================================================
+# DADA2 parameters
+# ============================================================
+
+dada2:
+
+  # ----------------------------------------------------------
+  # Choose these AFTER inspecting:
+  #
+  #   results/qc/Forward_Quality.png
+  #   results/qc/Reverse_Quality.png
+  #
+  # Leave at 0 until you have decided.
+  # ----------------------------------------------------------
+  truncLen:
+    forward: 200
+    reverse: 200
+
+  # Expected errors
+  maxEE:
+    forward: 2
+    reverse: 2
+
+  # Bases removed from the beginning of each read
+  trimLeft: 10
+
+  # Truncate at the first quality score <= this value
+  truncQ: 2
+
+  # Maximum number of ambiguous bases
+  maxN: 0
+

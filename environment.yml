@@ -1,0 +1,51 @@
+name: 16s-pipeline
+
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+
+  # =====================================================
+  # Workflow / SRA
+  # =====================================================
+  - snakemake
+  - sra-tools
+
+  # =====================================================
+  # Python
+  # =====================================================
+  - python=3.11
+  - pip
+
+  # Scientific Python
+  - numpy
+  - pandas
+  - scipy
+  - statsmodels
+
+  # Machine learning
+  - scikit-learn
+
+  # Plotting
+  - matplotlib
+
+  # Graph visualization
+  - graphviz
+  - python-graphviz
+
+  # =====================================================
+  # R
+  # =====================================================
+  - r-base=4.5
+  - r-ggplot2
+  - r-stringr
+
+  # =====================================================
+  # Bioconductor
+  # =====================================================
+  - bioconductor-dada2
+  - bioconductor-biostrings
+  - bioconductor-biocgenerics
+  - bioconductor-decipher
