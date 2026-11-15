@@ -24,9 +24,6 @@ Public NCBI dataset
 Quality control & preprocessing
         │
         ▼
-Microbiome analysis
-        │
-        ▼
 Feature preparation
         │
         ▼
